@@ -123,7 +123,6 @@
 % ============================================================
 \begin{frame}{Analytical Models for Comparison}
 % Owner: 2A + 2B
-% 2B can update the asymmetric-junction explanation after finishing.
 
 \begin{columns}[T]
 \begin{column}{0.52\textwidth}
@@ -145,7 +144,7 @@ p_{n0}=\frac{n_i^2}{\Nd},\quad n_{p0}=\frac{n_i^2}{\Na}
 \end{block}
 
 \vspace{-0.1cm}
-\small \textcolor{red}{TODO for 2B:} Add $p^+$--$n$ dominant-term interpretation and mention the \textbf{constant mobility limitation} in the simulation.
+\small In a $p^+$--$n$ junction, the lightly doped side dominates both $W$ and the minority-carrier diffusion current. At high doping, deviations are partly caused by the constant-mobility assumption in the baseline simulation.
 \end{column}
 \end{columns}
 \end{frame}
@@ -159,7 +158,6 @@ p_{n0}=\frac{n_i^2}{\Nd},\quad n_{p0}=\frac{n_i^2}{\Na}
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{fig1_dark_jv_semilog.pdf}
-    % \fbox{\parbox[c][3.0cm][c]{0.9\linewidth}{\centering Insert dark J--V semi-log figure}}
     \caption{Dark J--V and $\jzero$ fitting region.}
 \end{figure}
 \end{column}
@@ -184,7 +182,6 @@ p_{n0}=\frac{n_i^2}{\Nd},\quad n_{p0}=\frac{n_i^2}{\Na}
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{fig2_illuminated_jv.pdf}
-    % \fbox{\parbox[c][3.2cm][c]{0.9\linewidth}{\centering Insert illuminated J--V figure}}
     \caption{$\jsc$ at $V=0$ and $\voc$ at $J=0$.}
 \end{figure}
 \end{column}
@@ -197,14 +194,14 @@ p_{n0}=\frac{n_i^2}{\Nd},\quad n_{p0}=\frac{n_i^2}{\Na}
 \toprule
 Quantity & Value \\
 \midrule
-$\jsc$ & TODO \\
-$\voc$ & TODO \\
-$\jzero$ & TODO \\
+$|\jsc|$ & \SI{0.3084}{\ampere\per\centi\meter\squared} \\
+$\voc$ & \SI{0.6574}{\volt} \\
+$\jzero$ & \SI{1.142e-10}{\ampere\per\centi\meter\squared} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\small Replace TODOs after 1A final values are confirmed.
+\small The sign of $\jsc$ follows the Driftfusion current convention; the magnitude is reported here for comparison.
 \end{column}
 \end{columns}
 \end{frame}
@@ -218,7 +215,6 @@ $\jzero$ & TODO \\
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{fig3_vbi_vs_doping.pdf}
-    % \fbox{\parbox[c][2.8cm][c]{0.9\linewidth}{\centering $\vbi$ vs doping}}
 \end{figure}
 \end{column}
 
@@ -226,7 +222,6 @@ $\jzero$ & TODO \\
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{fig4_w_vs_doping.pdf}
-    % \fbox{\parbox[c][2.8cm][c]{0.9\linewidth}{\centering $W$ vs doping}}
 \end{figure}
 \end{column}
 
@@ -234,7 +229,6 @@ $\jzero$ & TODO \\
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{fig5_j0_vs_doping.pdf}
-    % \fbox{\parbox[c][2.8cm][c]{0.9\linewidth}{\centering $\jzero$ vs doping}}
 \end{figure}
 \end{column}
 \end{columns}
@@ -255,7 +249,6 @@ $\jzero$ & TODO \\
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{fig6_jsc_vs_di.pdf}
-    % \fbox{\parbox[c][3.0cm][c]{0.9\linewidth}{\centering Insert $\jsc$ vs $\di$ figure}}
     \caption{$\jsc$ increases with intrinsic-layer thickness.}
 \end{figure}
 \end{column}
@@ -283,9 +276,10 @@ $\jzero$ & TODO \\
 \begin{tabular}{lccc}
 \toprule
 Device & $|\jsc|$ & $\voc$ & $W$ \\
+ & \si{\milli\ampere\per\centi\meter\squared} & \si{\volt} & \si{\micro\meter} \\
 \midrule
-p--n & TODO & TODO & TODO \\
-PIN, $\di=2\,\um$ & TODO & TODO & TODO \\
+p--n baseline & 308.4 & 0.6574 & 0.5206 \\
+PIN, $\di=2\,\um$ & 63.2 & 0.5502 & 2.2679 \\
 \bottomrule
 \end{tabular}
 \end{table}
